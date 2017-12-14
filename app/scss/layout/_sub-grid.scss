@@ -9,15 +9,19 @@
         grid-template-rows: auto;
         grid-template-areas: 
         
-        "text icon1"
+        "text1 icon1"
         "text2 icon2"
         "text3 icon3"
         "text4 icon4";
         padding: 1.5em;
         justify-items: center;
-        
-        .text{
-            grid-area: text;
+
+        .texts{
+            padding-top: 10%;
+        }
+
+        .text1{
+            grid-area: text1;
         }
 
         .text2{
@@ -34,7 +38,7 @@
 
         .icons{
             max-width: 60px;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
 
             .icon1{
                 grid-area: icon1;

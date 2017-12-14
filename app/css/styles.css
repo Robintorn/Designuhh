@@ -524,11 +524,13 @@ main {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
-      grid-template-areas: "text icon1" "text2 icon2" "text3 icon3" "text4 icon4";
+      grid-template-areas: "text1 icon1" "text2 icon2" "text3 icon3" "text4 icon4";
       padding: 1.5em;
       justify-items: center; }
-      .artiklar .text {
-        grid-area: text; }
+      .artiklar .texts {
+        padding-top: 10%; }
+      .artiklar .text1 {
+        grid-area: text1; }
       .artiklar .text2 {
         grid-area: text2; }
       .artiklar .text3 {
@@ -537,7 +539,7 @@ main {
         grid-area: text4; }
       .artiklar .icons {
         max-width: 60px;
-        margin-bottom: 15px; }
+        margin-bottom: 25px; }
         .artiklar .icons .icon1 {
           grid-area: icon1; }
         .artiklar .icons .icon2 {
