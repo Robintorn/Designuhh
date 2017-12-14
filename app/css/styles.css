@@ -458,7 +458,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 3.9em; }
+    margin-top: 9.5em; }
     .flex .rofajo {
       color: white;
       font-size: 30px; }
@@ -514,7 +514,7 @@ main {
     .grid {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: 25vh auto;
+      grid-template-rows: 40vh auto;
       grid-template-areas: "header" "main"; } } }
 
 @supports (grid-area: auto) {
