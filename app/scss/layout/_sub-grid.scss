@@ -60,21 +60,22 @@
             }
         }
 
+        .arrows{
+            max-width: 30px;
+        
+            .arrow1{
+                grid-area: arrow1;
+            }
+            
+            .arrow2{
+                grid-area: arrow2;
+            }
+            
+            .arrow3{
+                grid-area: arrow3;
+            }
+        }
+        
     }
 }
-}
-
-.arrow1{
-    grid-area: arrow1;
-    max-width: 30px;
-}
-
-.arrow2{
-    grid-area: arrow2;
-    max-width: 30px;
-}
-
-.arrow3{
-    grid-area: arrow3;
-    max-width: 30px;
 }

@@ -547,16 +547,12 @@ main {
         .artiklar .icons .icon3 {
           grid-area: icon3; }
         .artiklar .icons .icon4 {
-          grid-area: icon4; } } }
-
-.arrow1 {
-  grid-area: arrow1;
-  max-width: 30px; }
-
-.arrow2 {
-  grid-area: arrow2;
-  max-width: 30px; }
-
-.arrow3 {
-  grid-area: arrow3;
-  max-width: 30px; }
+          grid-area: icon4; }
+      .artiklar .arrows {
+        max-width: 30px; }
+        .artiklar .arrows .arrow1 {
+          grid-area: arrow1; }
+        .artiklar .arrows .arrow2 {
+          grid-area: arrow2; }
+        .artiklar .arrows .arrow3 {
+          grid-area: arrow3; } } }
