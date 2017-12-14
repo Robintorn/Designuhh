@@ -19,7 +19,6 @@ gulp.task('hello', function() {
 // Development Tasks 
 // -----------------
 
-// Start browserSync server
 gulp.task('browserSync', function() {
   browserSync({
     server: {
