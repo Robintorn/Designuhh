@@ -8,7 +8,21 @@ main{
 
     .jumbo{
         text-align: center;
+
+        .button{
+            background: #ED3100;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            padding: 15px 60px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
     }
+    
 
 }
 }
