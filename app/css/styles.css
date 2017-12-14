@@ -486,14 +486,16 @@ header {
             color: red; } }
 
 main {
-  grid-area: main; }
+  grid-area: main;
+  padding-top: 5%; }
   @media (max-width: 639px) {
     main {
       border-bottom: 25px solid red;
       border-right: 25px solid red;
       border-left: 25px solid red; }
       main .jumbo {
-        text-align: center; }
+        text-align: center;
+        padding-bottom: 10%; }
         main .jumbo .button {
           background: #ED3100;
           border: none;

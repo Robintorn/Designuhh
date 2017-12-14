@@ -1,6 +1,6 @@
 main{
     grid-area: main;
-
+    padding-top: 5%;
     @include respond-to("xsmall"){
     border-bottom: 25px solid red;
     border-right: 25px solid red;
@@ -8,6 +8,7 @@ main{
 
     .jumbo{
         text-align: center;
+        padding-bottom: 10%;
 
         .button{
             background: #ED3100;
