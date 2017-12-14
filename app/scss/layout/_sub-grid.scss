@@ -1,0 +1,58 @@
+@supports (grid-area: auto){
+    
+    /* master-grid */
+    @include respond-to("xsmall"){
+
+    .artiklar{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        
+        "text icon1"
+        "text2 icon2"
+        "text3 icon3"
+        "text4 icon4";
+        padding: 1.5em;
+        justify-items: center;
+
+        .text{
+            grid-area: text;
+        }
+
+        .text2{
+            grid-area: text2;
+        }
+
+        .text3{
+            grid-area: text3;
+        }
+
+        .text4{
+            grid-area: text4;
+        }
+
+        .icons{
+            max-width: 60px;
+            margin-bottom: 15px;
+
+            .icon1{
+                grid-area: icon1;
+            }
+            
+            .icon2{
+                grid-area: icon2;
+            }
+
+            .icon3{
+                grid-area: icon3;
+            }
+
+            .icon4{
+                grid-area: icon4;
+            }
+        }
+
+    }
+}
+}

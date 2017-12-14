@@ -1,0 +1,15 @@
+@supports (grid-area: auto){
+    
+    /* master-grid */
+    @include respond-to("xsmall"){
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 25vh auto;
+        grid-template-areas: 
+        "header"
+        "main";
+    }
+}
+}

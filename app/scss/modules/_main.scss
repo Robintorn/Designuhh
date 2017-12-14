@@ -1,0 +1,14 @@
+main{
+    grid-area: main;
+
+    @include respond-to("xsmall"){
+    border-bottom: 25px solid red;
+    border-right: 25px solid red;
+    border-left: 25px solid red;
+
+    .jumbo{
+        text-align: center;
+    }
+
+}
+}
