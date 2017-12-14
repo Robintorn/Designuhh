@@ -524,7 +524,7 @@ main {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
-      grid-template-areas: "text1 icon1" "text2 icon2" "text3 icon3" "text4 icon4";
+      grid-template-areas: "text1 icon1" "text1 arrow1" "text2 icon2" "text2 arrow2" "text3 icon3" "text3 arrow3" "text4 icon4";
       padding: 1.5em;
       justify-items: center; }
       .artiklar .texts {
@@ -548,3 +548,15 @@ main {
           grid-area: icon3; }
         .artiklar .icons .icon4 {
           grid-area: icon4; } } }
+
+.arrow1 {
+  grid-area: arrow1;
+  max-width: 30px; }
+
+.arrow2 {
+  grid-area: arrow2;
+  max-width: 30px; }
+
+.arrow3 {
+  grid-area: arrow3;
+  max-width: 30px; }
