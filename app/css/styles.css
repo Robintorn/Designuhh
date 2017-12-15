@@ -514,8 +514,7 @@ main {
           cursor: pointer; }
       main .jumbo2 {
         text-align: center;
-        padding-top: 15%;
-        padding-bottom: 10%; }
+        padding-top: 15%; }
         main .jumbo2 .margin {
           margin-bottom: 1.3em; }
         main .jumbo2 .button2 {
@@ -540,7 +539,11 @@ main {
         main .sökruta #sök {
           color: white;
           border: 1px solid #ED3100;
-          background: #ED3100; } }
+          background: #ED3100; }
+      main .jumbo3 {
+        text-align: center; }
+        main .jumbo3 .pizzahut {
+          max-width: 60px; } }
 
 @supports (grid-area: auto) {
   /* master-grid */
