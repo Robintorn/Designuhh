@@ -10,6 +10,9 @@
   list-style: none;
   text-decoration: none; }
 
+h2, h3, h4, h5, h6 {
+  margin: 0.67em 0; }
+
 img {
   width: 100%;
   height: auto; }
@@ -507,6 +510,23 @@ main {
           font-size: 16px;
           margin: 4px 2px;
           cursor: pointer; } }
+  main .jumbo2 {
+    text-align: center;
+    padding-top: 15%; }
+    main .jumbo2 .margin {
+      margin-bottom: 1.3em; }
+    main .jumbo2 .button2 {
+      border: none;
+      color: white;
+      padding: 15px;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 90%; }
+      main .jumbo2 .button2:nth-child(even) {
+        background-color: #3B5998; }
+        main .jumbo2 .button2:nth-child(even):nth-child(odd) {
+          background-color: #ED3100; }
 
 @supports (grid-area: auto) {
   /* master-grid */
@@ -518,7 +538,7 @@ main {
       grid-template-areas: "header" "main"; } } }
 
 @supports (grid-area: auto) {
-  /* master-grid */
+  /* Sub-grid */
   @media (max-width: 639px) {
     .artiklar {
       display: grid;

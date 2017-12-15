@@ -27,4 +27,32 @@ main{
     
 
 }
+
+.jumbo2{
+    text-align: center;
+    padding-top: 15%;
+
+    .margin{
+        margin-bottom: 1.3em;
+    }
+
+    .button2{
+        border: none;
+        color: white;
+        padding: 15px;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 90%;
+
+            &:nth-child(even) {
+              background-color: #3B5998;
+
+              &:nth-child(odd) {
+                background-color: #ED3100;
+              }
+            }
+    }
+}
+
 }

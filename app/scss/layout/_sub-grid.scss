@@ -1,6 +1,6 @@
 @supports (grid-area: auto){
     
-    /* master-grid */
+    /* Sub-grid */
     @include respond-to("xsmall"){
 
     .artiklar{
