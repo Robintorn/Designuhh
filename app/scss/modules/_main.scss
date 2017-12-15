@@ -24,40 +24,38 @@ main{
             cursor: pointer;
         }
     }
+
+    .jumbo2{
+        text-align: center;
+        padding-top: 15%;
+        padding-bottom: 10%;
     
-
-}
-
-.jumbo2{
-    text-align: center;
-    padding-top: 15%;
-    padding-bottom: 10%;
-
-    .margin{
-        margin-bottom: 1.3em;
-    }
-
-    .button2{
-        border: none;
-        color: white;
-        padding: 15px;
-        display: inline-block;
-        margin: 4px 2px;
-        cursor: pointer;
-        width: 85%;
-
-
-        &:nth-child(odd) {
-            background-color: #3B5998;
-          }
-            &:nth-last-child(1) {
-              background-color: #ED3100;
-            }
-    }
-
-    .border{
-        margin-top: 1em;
-        margin-bottom: 1em;
+        .margin{
+            margin-bottom: 1.3em;
+        }
+    
+        .button2{
+            border: none;
+            color: white;
+            padding: 15px;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 85%;
+    
+    
+            &:nth-child(odd) {
+                background-color: #3B5998;
+              }
+                &:nth-last-child(1) {
+                  background-color: #ED3100;
+                }
+        }
+    
+        .border{
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
     }
 }
 
