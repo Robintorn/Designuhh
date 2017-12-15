@@ -536,7 +536,7 @@ main {
       main .sökruta {
         margin-top: 1.5em; }
         main .sökruta .söken {
-          padding: 0.5em; }
+          padding: 0.2em; }
         main .sökruta #sök {
           color: white;
           border: 1px solid #ED3100;
@@ -590,3 +590,13 @@ main {
           grid-area: arrow2; }
         .artiklar .arrows .arrow3 {
           grid-area: arrow3; } } }
+
+@supports (grid-area: auto) {
+  /* Sub-sub-grid */
+  @media (max-width: 639px) {
+    .grid-container {
+      display: grid;
+      padding: 1em;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em;
+      grid-template-rows: auto; } } }
