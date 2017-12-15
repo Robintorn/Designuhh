@@ -619,7 +619,30 @@ main {
   @media (max-width: 639px) {
     .restaurantmenu-grid {
       display: grid;
+      padding: 1em;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto;
       grid-gap: 1em;
-      grid-template-areas: "img img text1 text1" "img img text2 text2" "img img text3 text4"; } } }
+      grid-template-areas: "bild1 bild1 text1 text1" "bild1 bild1 text2 text2" "bild1 bild1 text3 text4"  "bild2 bild2 text5 text5" "bild2 bild2 text6 text6" "bild2 bild2 text7 text8"; }
+      .restaurantmenu-grid .texteru1 {
+        grid-area: text1; }
+      .restaurantmenu-grid .texteru2 {
+        grid-area: text2; }
+      .restaurantmenu-grid .texteru3 {
+        grid-area: text3; }
+      .restaurantmenu-grid #texteru4 {
+        grid-area: text4; }
+      .restaurantmenu-grid .texteru5 {
+        grid-area: text5; }
+      .restaurantmenu-grid .texteru6 {
+        grid-area: text6; }
+      .restaurantmenu-grid .texteru7 {
+        grid-area: text7; }
+      .restaurantmenu-grid #texteru8 {
+        grid-area: text8; }
+      .restaurantmenu-grid .bild1 {
+        height: 100%;
+        grid-area: bild1; }
+      .restaurantmenu-grid .bild2 {
+        height: 100%;
+        grid-area: bild2; } } }
