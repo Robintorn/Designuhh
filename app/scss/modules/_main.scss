@@ -1,7 +1,7 @@
 main{
     grid-area: main;
-    padding-top: 5%;
     @include respond-to("xsmall"){
+    padding-top: 5%;
     border-bottom: 25px solid red;
     border-right: 25px solid red;
     border-left: 25px solid red;
@@ -29,11 +29,11 @@ main{
         text-align: center;
         padding-top: 15%;
         padding-bottom: 10%;
-    
+
         .margin{
             margin-bottom: 1.3em;
         }
-    
+
         .button2{
             border: none;
             color: white;
@@ -49,6 +49,28 @@ main{
             margin-bottom: 1em;
         }
     }
-}
 
+    #spec1{
+        background: #ED3100;
+    }
+
+    #spec2{
+        background: #3B5998;
+    }
+
+    .sökruta{
+        margin-top: 1.5em;
+
+    .söken{
+        padding: 0.5em;
+    }
+
+    #sök{
+        color: white;
+        border: 1px solid #ED3100;
+        background: #ED3100;
+    }
+
+    }
+}
 }
