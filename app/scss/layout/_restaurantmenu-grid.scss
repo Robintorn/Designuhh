@@ -1,0 +1,20 @@
+@supports (grid-area: auto){
+    
+    /* master-grid */
+    @include respond-to("xsmall"){
+
+    .restaurantmenu-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        grid-template-areas: 
+
+        "img img text1 text1"
+        "img img text2 text2"
+        "img img text3 text4";
+
+        
+    }
+}
+}
