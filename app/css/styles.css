@@ -512,7 +512,8 @@ main {
           cursor: pointer; } }
   main .jumbo2 {
     text-align: center;
-    padding-top: 15%; }
+    padding-top: 15%;
+    padding-bottom: 10%; }
     main .jumbo2 .margin {
       margin-bottom: 1.3em; }
     main .jumbo2 .button2 {
@@ -522,11 +523,14 @@ main {
       display: inline-block;
       margin: 4px 2px;
       cursor: pointer;
-      width: 90%; }
-      main .jumbo2 .button2:nth-child(even) {
+      width: 85%; }
+      main .jumbo2 .button2:nth-child(odd) {
         background-color: #3B5998; }
-        main .jumbo2 .button2:nth-child(even):nth-child(odd) {
-          background-color: #ED3100; }
+      main .jumbo2 .button2:nth-last-child(1) {
+        background-color: #ED3100; }
+    main .jumbo2 .border {
+      margin-top: 1em;
+      margin-bottom: 1em; }
 
 @supports (grid-area: auto) {
   /* master-grid */
