@@ -512,6 +512,8 @@ main {
           font-size: 16px;
           margin: 4px 2px;
           cursor: pointer; }
+        main .jumbo .mellanrum {
+          margin-bottom: 1em; }
       main .jumbo2 {
         text-align: center;
         padding-top: 15%; }
