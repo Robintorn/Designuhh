@@ -1,30 +1,14 @@
 @charset "UTF-8";
-@import url(https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
-@import url(http://fonts.googleapis.com/css?family=Poiret+One);
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'merriweather', Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  line-height: 1.4em; }
-
-h2, h3, h4, h5, h6 {
-  margin: 0.67em 0; }
-
-img {
-  width: 100%;
-  height: auto; }
-
 /*-----------Normalize file-----------*/
 /*
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url(https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
 html {
   line-height: 1.15;
   /* 1 */
@@ -408,281 +392,123 @@ template {
 [hidden] {
   display: none; }
 
-/*Styling header*/
-/*General Styling*/
-header {
-  grid-area: header;
-  background-image: url("/images/hero.jpg");
+/* Universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  list-style-type: none;
+  text-decoration: none; }
+
+body, html {
+  height: 100%; }
+
+body {
+  position: relative; }
+
+section {
+  z-index: 1;
+  position: relative; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; }
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+p {
+  margin: 10px 0px 10px; }
+
+.navbar-form {
+  margin-top: 6px; }
+
+.navbar-inverse {
+  background-color: #3498DB;
+  border: none;
+  margin-bottom: 0; }
+  .navbar-inverse .navbar-toggle {
+    border-color: white;
+    cursor: pointer; }
+    .navbar-inverse .navbar-toggle .icon-bar {
+      background-color: white;
+      border-color: white; }
+  .navbar-inverse .navbar-brand {
+    color: white; }
+  .navbar-inverse .navbar-nav > li > a {
+    color: white; }
+    .navbar-inverse .navbar-nav > li > a:hover {
+      background-color: none;
+      color: white; }
+
+#first {
+  height: 65vh;
+  background-image: url("https://i.ytimg.com/vi/lHtTzXtLnoQ/maxresdefault.jpg");
   background-size: cover;
   background-repeat: none; }
-  header nav {
-    background-color: #095FCE; }
-    header nav ul {
-      margin: 0;
-      padding: 0; }
-    header nav a {
-      color: #f5f5f5;
-      font-size: 25px; }
+  #first .intro {
+    background-color: transparent;
+    color: white;
+    margin-top: 2cm; }
+    #first .intro .animatedText {
+      animation: fadeAndScale 0.3s cubic-bezier(0, 1.07, 0.72, 1.42);
+      transform-origin: center bottom; }
+      #first .intro .animatedText em {
+        font-size: 35px; }
 
-/*Navigation xsmall*/
-@media (max-width: 639px) {
-  /*using my own breakingpoint variable from breakingpoints map*/
-  #nav {
-    /*creating off-canvas menu*/
-    transition: transform .3s ease-in-out;
-    top: 0;
-    bottom: 0;
-    min-height: 100vh;
-    /*overrides Safari bug*/
-    position: fixed;
-    /*makes it possible to scroll behind the nav*/
-    width: 300px;
-    left: -340px;
-    max-width: 60em;
-    padding-top: 1.5em;
-    z-index: 999;
-    /*places the navigation at the front*/ }
-  #nav:target {
-    transform: translateX(340px); }
-  .toggle {
-    color: #f5f5f5;
-    /*styling bars icon*/
-    font-size: 25px;
-    position: absolute;
-    top: 5px;
-    left: 15px;
+@keyframes fadeAndScale {
+  from {
+    opacity: 0;
+    transform: scale3d(0.75, 0.75, 0.1); }
+  to {
+    opacity: 1; } }
+
+#home {
+  background: #F9F9F9;
+  padding-top: 5%; }
+  #home .presentation {
+    margin-bottom: 3em; }
+  #home h2 {
+    color: #3498DB;
     font-size: 30px; }
-  .close {
-    text-align: right;
-    display: block;
-    text-decoration: none;
-    font-size: 3em;
-    position: relative;
-    top: -30px; }
-  .flex {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 9.5em; }
-    .flex .rofajo {
-      color: white;
-      font-size: 30px; }
-    .flex .rofajo-img {
-      max-width: 60px; } }
+  #home .textsub {
+    font-size: 18px; }
 
-/*Navigation Desktop & Tablet*/
-@media (min-width: 40em) {
-  /*using breakpoint variables from breakpoints map*/
-  .toggle {
-    display: none;
-    /*hides bars icon on desktop & tablet*/ }
-  nav {
-    background-color: #282828;
-    /*nav color is changed on desktop & tablet*/ }
-    nav ul {
-      display: flex;
-      justify-content: center; }
-      nav ul li {
-        padding: 0 20px 0 0; }
-        nav ul li a {
-          font-size: 30px;
-          /*nav font-size is changed on desktop & tablet*/ }
-          nav ul li a:hover {
-            color: red; } }
-
-main {
-  grid-area: main; }
-  @media (max-width: 639px) {
-    main {
-      padding-top: 5%;
-      border-bottom: 25px solid red;
-      border-right: 25px solid red;
-      border-left: 25px solid red; }
-      main .jumbo {
-        text-align: center;
-        padding-bottom: 10%; }
-        main .jumbo .button {
-          background: #ED3100;
-          border: none;
-          border-radius: 20px;
-          color: white;
-          padding: 15px 60px;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          cursor: pointer; }
-        main .jumbo .mellanrum {
-          margin-bottom: 1em; }
-      main .jumbo2 {
-        text-align: center;
-        padding-top: 15%; }
-        main .jumbo2 .margin {
-          margin-bottom: 1.3em; }
-        main .jumbo2 .button2 {
-          border: none;
-          color: white;
-          padding: 15px;
-          display: inline-block;
-          margin: 4px 2px;
-          cursor: pointer;
-          width: 85%; }
-        main .jumbo2 .border {
-          margin-top: 1em;
-          margin-bottom: 1em; }
-      main #spec1 {
-        background: #ED3100; }
-      main #spec2 {
-        background: #3B5998; }
-      main .sökruta {
-        margin-top: 1.5em; }
-        main .sökruta .söken {
-          padding: 0.2em; }
-        main .sökruta #sök {
-          color: white;
-          border: 1px solid #ED3100;
-          background: #ED3100; }
-      main .jumbo3 {
-        text-align: center;
-        padding-bottom: 10%; }
-        main .jumbo3 .pizzahut {
-          max-width: 60px; }
-      main .jumbo4 .center {
-        text-align: center;
-        padding-top: 10%; }
-      main .jumbo4 #kontaktaoss {
-        padding-top: 0;
-        padding-bottom: 10%; }
-      main .jumbo4 .rounded {
-        background: #ED3100;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        color: white; }
-      main .jumbo4 .group {
-        text-align: center; }
-        main .jumbo4 .group .button {
-          background: #ED3100;
-          border: none;
-          border-radius: 20px;
-          color: white;
-          padding: 15px 60px;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          cursor: pointer; } }
-
-@supports (grid-area: auto) {
-  /* master-grid */
-  @media (max-width: 639px) {
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: 40vh auto;
-      grid-template-areas: "header" "main"; } } }
-
-@supports (grid-area: auto) {
-  /* Sub-grid */
-  @media (max-width: 639px) {
-    .artiklar {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas: "text1 icon1" "text1 arrow1" "text2 icon2" "text2 arrow2" "text3 icon3" "text3 arrow3" "text4 icon4";
-      padding: 1.5em;
-      justify-items: center; }
-      .artiklar .texts {
-        padding-top: 10%; }
-      .artiklar .text1 {
-        grid-area: text1; }
-      .artiklar .text2 {
-        grid-area: text2; }
-      .artiklar .text3 {
-        grid-area: text3; }
-      .artiklar .text4 {
-        grid-area: text4; }
-      .artiklar .icons {
-        max-width: 60px;
-        margin-bottom: 25px; }
-        .artiklar .icons .icon1 {
-          grid-area: icon1; }
-        .artiklar .icons .icon2 {
-          grid-area: icon2; }
-        .artiklar .icons .icon3 {
-          grid-area: icon3; }
-        .artiklar .icons .icon4 {
-          grid-area: icon4; }
-      .artiklar .arrows {
-        max-width: 30px; }
-        .artiklar .arrows .arrow1 {
-          grid-area: arrow1; }
-        .artiklar .arrows .arrow2 {
-          grid-area: arrow2; }
-        .artiklar .arrows .arrow3 {
-          grid-area: arrow3; } } }
-
-@supports (grid-area: auto) {
-  /* Sub-sub-grid */
-  @media (max-width: 639px) {
-    .grid-container {
-      display: grid;
-      padding: 1em;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 1em;
-      grid-template-rows: auto; } } }
-
-@supports (grid-area: auto) {
-  /* master-grid */
-  @media (max-width: 639px) {
-    .container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto;
-      grid-gap: 1em; } } }
-
-@supports (grid-area: auto) {
-  /* master-grid */
-  @media (max-width: 639px) {
-    .restaurantmenu-grid {
-      display: grid;
-      padding: 1em;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      grid-template-areas: "bild1 bild1 text1 text1" "bild1 bild1 text2 text2" "bild1 bild1 text3 text4"  "bild2 bild2 text5 text5" "bild2 bild2 text6 text6" "bild2 bild2 text7 text8"  "bild3 bild3 text9 text9" "bild3 bild3 text10 text10" "bild3 bild3 text11 text12"; }
-      .restaurantmenu-grid .texteru1 {
-        grid-area: text1; }
-      .restaurantmenu-grid .texteru2 {
-        grid-area: text2; }
-      .restaurantmenu-grid .texteru3 {
-        grid-area: text3; }
-      .restaurantmenu-grid #texteru4 {
-        grid-area: text4; }
-      .restaurantmenu-grid .texteru5 {
-        grid-area: text5; }
-      .restaurantmenu-grid .texteru6 {
-        grid-area: text6; }
-      .restaurantmenu-grid .texteru7 {
-        grid-area: text7; }
-      .restaurantmenu-grid #texteru8 {
-        grid-area: text8; }
-      .restaurantmenu-grid .texteru9 {
-        grid-area: text9; }
-      .restaurantmenu-grid .texteru10 {
-        grid-area: text10; }
-      .restaurantmenu-grid #texteru11 {
-        grid-area: text11; }
-      .restaurantmenu-grid .bild1 {
-        height: 100%;
-        grid-area: bild1; }
-      .restaurantmenu-grid .bild2 {
-        height: 100%;
-        grid-area: bild2; }
-      .restaurantmenu-grid .bild3 {
-        height: 100%;
-        grid-area: bild3; }
-      .restaurantmenu-grid .input {
-        color: white;
-        background: #ED3100;
-        border-radius: 20px; } } }
+#about {
+  padding-top: 5%;
+  background: #ffffff; }
+  #about .heading {
+    color: #6EA43F;
+    margin-bottom: 5px; }
+  #about .new {
+    margin-bottom: 4em; }
+    #about .new h1 {
+      color: #3498DB; }
+    #about .new .löft {
+      font-size: 25px; }
+  #about .secondary {
+    margin-bottom: 3em; }
+  #about .other {
+    margin-bottom: 40px; }
+  #about .border {
+    border-top: 1px solid #EEE; }
+    #about .border .span4 {
+      padding: 1em; }
+    #about .border .acc.collapsed .fa-chevron-down,
+    #about .border .acc .fa-chevron-right {
+      display: none; }
+    #about .border .acc.collapsed .fa-chevron-right,
+    #about .border .acc .fa-chevron-down {
+      display: inline-block;
+      color: #6EA43F;
+      cursor: pointer; }
+  #about .icons {
+    margin-bottom: 1.2em; }

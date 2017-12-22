@@ -83,27 +83,6 @@ gulp.task('clean:dist', function() {
   return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
 });
 
-//Performance budget
-gulp.task('louis', function() {
-  louis({
-    timeout: 60,
-    url: 'http://localhost:3000',
-    performanceBudget: {
-      requests: 10,
-      headersSize: 80,
-      cssSize: 19000,
-      jsSize: 2000,
-      consoleMessages: 3,
-      imageSize: 700000,
-      domContentLoaded: 2000,
-      smallestLatency: 1000,
-      medianLatency: 10,
-      slowestResponse: 1000,
-      timeToFirstImage: 700
-      
-    }
-  });
-});
 
 // Build Sequences
 // ---------------

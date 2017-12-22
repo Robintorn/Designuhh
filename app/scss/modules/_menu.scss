@@ -1,0 +1,30 @@
+.navbar-inverse{
+    background-color: #3498DB;
+    border: none;
+    margin-bottom: 0;
+
+    .navbar-toggle{
+      border-color: white;
+      cursor: pointer;
+
+      .icon-bar{
+        background-color: white;
+        border-color: white;
+      }
+    }
+
+    .navbar-brand{
+      color: white;
+    }
+
+    .navbar-nav > li > a{
+      color: white;
+
+      &:hover{
+        background-color: none;
+        color: white;
+      }
+    }
+   }
+   
+   

@@ -1,0 +1,32 @@
+#first {
+    height:65vh;
+    background-image: url('https://i.ytimg.com/vi/lHtTzXtLnoQ/maxresdefault.jpg');
+    background-size: cover;
+    background-repeat: none;
+
+    .intro{
+      background-color: transparent;
+      color: white;
+      margin-top: 2cm;
+
+      .animatedText{
+        animation: fadeAndScale .3s cubic-bezier(0,1.07,.72,1.42);  
+        transform-origin: center bottom;
+
+        em{
+          font-size: 35px;
+        }
+      }
+      
+      @keyframes fadeAndScale {
+        from{
+          opacity: 0;
+          transform: scale3d(.75, .75, .1);
+        }
+        to{
+          opacity: 1;
+        }
+      }
+    }
+   }
+
