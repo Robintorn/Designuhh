@@ -16,8 +16,22 @@
     border: none;
     transition:all 0.3s ease 0s;
 
-    &:hover,&:active:hover{
+    &:hover{
         color: #ffffff;
+
+        &:before,
+        &:after {
+            width: 100%;
+        }
+    }
+
+    &:active:hover{
+        color: #ffffff;
+
+        &:before,
+        &:after {
+            width: 100%;
+        }
     }
 
     &:before{
@@ -40,13 +54,6 @@
         width: 30%;
         height: 4px;
         transition:all 0.3s ease 0s;
-    }
-
-    &:hover:before,
-    &:hover:after,
-    &:active:before,
-    &:active:after{
-      width: 100%;
     }
   }
 

@@ -529,8 +529,14 @@ p {
     border-radius: 0 !important;
     border: none;
     transition: all 0.3s ease 0s; }
-    #skills .button:hover, #skills .button:active:hover {
+    #skills .button:hover {
       color: #ffffff; }
+      #skills .button:hover:before, #skills .button:hover:after {
+        width: 100%; }
+    #skills .button:active:hover {
+      color: #ffffff; }
+      #skills .button:active:hover:before, #skills .button:active:hover:after {
+        width: 100%; }
     #skills .button:before {
       content: "";
       position: absolute;
@@ -549,8 +555,6 @@ p {
       width: 30%;
       height: 4px;
       transition: all 0.3s ease 0s; }
-    #skills .button:hover:before, #skills .button:hover:after, #skills .button:active:before, #skills .button:active:after {
-      width: 100%; }
   #skills .button1 {
     background-color: #b2f376;
     color: slategrey;
