@@ -581,6 +581,21 @@ p {
     background-color: #e7e8eb;
     margin: 1.5em auto; }
 
+#blog {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #75B9E7; }
+  #blog .artikel {
+    margin-bottom: 30px; }
+  #blog .artik p {
+    font-size: 15px;
+    padding: 0.5em;
+    color: black; }
+    #blog .artik p .date {
+      color: #6EA43F; }
+  #blog .borderu {
+    border-bottom: 1px solid #EEE; }
+
 /* Footer */
 footer {
   background-color: #3498DB;
