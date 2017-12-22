@@ -512,3 +512,87 @@ p {
       cursor: pointer; }
   #about .icons {
     margin-bottom: 1.2em; }
+
+#skills {
+  padding-top: 2%;
+  background-color: #75B9E7;
+  color: white; }
+  #skills .button {
+    background-color: #b2f376;
+    color: slategrey;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 0 !important;
+    border: none;
+    transition: all 0.3s ease 0s; }
+    #skills .button:hover, #skills .button:active:hover {
+      color: #ffffff; }
+    #skills .button:before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 0;
+      background-color: #fff;
+      width: 30%;
+      height: 4px;
+      transition: all 0.3s ease 0s; }
+    #skills .button:after {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      right: 0;
+      background-color: #fff;
+      width: 30%;
+      height: 4px;
+      transition: all 0.3s ease 0s; }
+    #skills .button:hover:before, #skills .button:hover:after, #skills .button:active:before, #skills .button:active:after {
+      width: 100%; }
+  #skills .button1 {
+    background-color: #b2f376;
+    color: slategrey;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 0 !important;
+    border: none;
+    transition: all 0.3s ease 0s; }
+  #skills .line1 {
+    width: 1px;
+    height: 100%;
+    min-height: 23rem;
+    background-color: #e7e8eb;
+    margin: 0 calc(7% - .5px);
+    margin: 0 auto; }
+  #skills .line2 {
+    width: 1px;
+    height: 100%;
+    min-height: 23rem;
+    background-color: #e7e8eb;
+    margin: 1.5em auto; }
+
+/* Footer */
+footer {
+  background-color: #3498DB;
+  color: white;
+  overflow: hidden; }
+  footer #footertop {
+    border-right: 67vw solid white;
+    border-left: 33vw solid white;
+    border-bottom: 47px solid transparent; }
+  footer .footercontent {
+    margin-bottom: 3em; }
+    footer .footercontent .logo {
+      max-width: 60px;
+      height: auto;
+      margin-bottom: 1em; }
+    footer .footercontent .border {
+      border-left: 1px solid #e9e7eb; }
+      footer .footercontent .border .specific {
+        margin-bottom: 3.3em; }

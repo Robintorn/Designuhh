@@ -1,0 +1,30 @@
+/* Footer */
+
+footer{
+    background-color: #3498DB;
+    color: white;
+    overflow: hidden;
+
+       
+    #footertop {
+        border-right: 67vw solid white;
+        border-left: 33vw solid white;
+        border-bottom: 47px solid transparent;
+      }
+    .footercontent{
+        margin-bottom: 3em;
+
+        .logo{
+            max-width: 60px;
+            height: auto;
+            margin-bottom: 1em;
+        }
+        .border{
+            border-left: 1px solid #e9e7eb;
+
+            .specific{
+                margin-bottom: 3.3em;
+            }
+        }
+      }
+    }

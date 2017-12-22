@@ -1,0 +1,84 @@
+#skills{
+  padding-top: 2%;
+  background-color: #75B9E7;
+  color: white;
+
+  .button {
+    background-color: rgb(178, 243, 118);
+    color: slategrey;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 0 !important;
+    border: none;
+    transition:all 0.3s ease 0s;
+
+    &:hover,&:active:hover{
+        color: #ffffff;
+    }
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: 0;
+        background-color:#fff;
+        width: 30%;
+        height: 4px;
+        transition:all 0.3s ease 0s;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        right: 0;
+        background-color:#fff;
+        width: 30%;
+        height: 4px;
+        transition:all 0.3s ease 0s;
+    }
+
+    &:hover:before,
+    &:hover:after,
+    &:active:before,
+    &:active:after{
+      width: 100%;
+    }
+  }
+
+  .button1{
+    background-color: rgb(178, 243, 118);
+    color: slategrey;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 0 !important;
+    border: none;
+    transition:all 0.3s ease 0s;
+  }
+  
+
+  .line1 {
+    width: 1px;
+    height: 100%;
+    min-height: 23rem;
+    background-color: #e7e8eb;
+    margin: 0 calc(7% - .5px);
+    margin: 0 auto;
+  }
+  
+  .line2 {
+    width: 1px;
+    height: 100%;
+    min-height: 23rem;
+    background-color: #e7e8eb;
+    margin: 1.5em auto;
+  }  
+}
