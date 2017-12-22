@@ -6,7 +6,7 @@
 
     .intro{
       background-color: transparent;
-      color: white;
+      color: map-get($color-theme, third);
       margin-top: 2cm;
 
       .animatedText{

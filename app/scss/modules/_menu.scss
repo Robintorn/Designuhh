@@ -1,28 +1,28 @@
 .navbar-inverse{
-    background-color: #3498DB;
+    background-color: map-get($color-theme, primary);
     border: none;
     margin-bottom: 0;
 
     .navbar-toggle{
-      border-color: white;
+      border-color: map-get($color-theme, third);
       cursor: pointer;
 
       .icon-bar{
-        background-color: white;
-        border-color: white;
+        background-color: map-get($color-theme, third);
+        border-color: map-get($color-theme, third);
       }
     }
 
     .navbar-brand{
-      color: white;
+      color: map-get($color-theme, third);
     }
 
     .navbar-nav > li > a{
-      color: white;
+      color: map-get($color-theme, third);
 
       &:hover{
         background-color: none;
-        color: white;
+        color: map-get($color-theme, sixth);
       }
     }
    }

@@ -1,26 +1,26 @@
 {
-  "name": "evxfeh17_html_tenta",
+  "name": "Robintorn",
   "version": "1.0.0",
-  "description": "HTML CSS Tenta",
+  "description": "MittUF",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/FatmeMustafa/EVXFEH17_Fatme_Mustafa.git"
+    "url": "https://github.com/FatmeMustafa/EVXFEH17_Robin_Torn.git"
   },
   "keywords": [
-    "tenta",
+    "MittUF",
     "html",
     "css"
   ],
-  "author": "FatmeMustafa",
+  "author": "Robintorn",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FatmeMustafa/EVXFEH17_Fatme_Mustafa.git/issues"
+    "url": "https://github.com/FatmeMustafa/EVXFEH17_Robin_Torn.git/issues"
   },
-  "homepage": "https://github.com/FatmeMustafa/EVXFEH17_Fatme_Mustafa.git#readme",
+  "homepage": "https://github.com/FatmeMustafa/EVXFEH17_Robin_Torn.git#readme",
   "dependencies": {
     "browser-sync": "2.18.13",
     "del": "3.0.0",

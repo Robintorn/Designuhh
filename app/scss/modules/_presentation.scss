@@ -1,5 +1,5 @@
 #home{
-    background: #F9F9F9;
+    background: map-get($color-theme, secondary);
     padding-top: 5%;
 
     .presentation{
@@ -7,7 +7,7 @@
     }
 
     h2{
-      color: #3498DB;
+      color: map-get($color-theme, primary);
       font-size: 30px;
     }
 
