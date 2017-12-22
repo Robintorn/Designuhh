@@ -1,14 +1,14 @@
 /* Footer */
 
 footer{
-    background-color: #3498DB;
+    background-color: map-get($color-theme, primary);
     color: white;
     overflow: hidden;
 
        
     #footertop {
-        border-right: 67vw solid white;
-        border-left: 33vw solid white;
+        border-right: 67vw solid map-get($color-theme, third);
+        border-left: 33vw solid map-get($color-theme, third);
         border-bottom: 47px solid transparent;
       }
     .footercontent{
@@ -20,7 +20,7 @@ footer{
             margin-bottom: 1em;
         }
         .border{
-            border-left: 1px solid #e9e7eb;
+            border-left: 1px solid map-get($color-theme, secondary);
 
             .specific{
                 margin-bottom: 3.3em;

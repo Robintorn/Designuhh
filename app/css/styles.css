@@ -539,7 +539,7 @@ p {
       position: absolute;
       top: -7px;
       left: 0;
-      background-color: #fff;
+      background-color: #ffffff;
       width: 30%;
       height: 4px;
       transition: all 0.3s ease 0s; }
@@ -548,7 +548,7 @@ p {
       position: absolute;
       bottom: -7px;
       right: 0;
-      background-color: #fff;
+      background-color: #ffffff;
       width: 30%;
       height: 4px;
       transition: all 0.3s ease 0s; }
@@ -568,20 +568,20 @@ p {
     width: 1px;
     height: 100%;
     min-height: 23rem;
-    background-color: #e7e8eb;
+    background-color: #F9F9F9;
     margin: 0 calc(7% - .5px);
     margin: 0 auto; }
   #skills .line2 {
     width: 1px;
     height: 100%;
     min-height: 23rem;
-    background-color: #e7e8eb;
+    background-color: #F9F9F9;
     margin: 1.5em auto; }
 
 #blog {
   padding-top: 5%;
   padding-bottom: 5%;
-  color: #75B9E7; }
+  color: #3498DB; }
   #blog .artikel {
     margin-bottom: 30px; }
   #blog .artik p {
@@ -599,8 +599,8 @@ footer {
   color: white;
   overflow: hidden; }
   footer #footertop {
-    border-right: 67vw solid white;
-    border-left: 33vw solid white;
+    border-right: 67vw solid #ffffff;
+    border-left: 33vw solid #ffffff;
     border-bottom: 47px solid transparent; }
   footer .footercontent {
     margin-bottom: 3em; }
@@ -609,6 +609,6 @@ footer {
       height: auto;
       margin-bottom: 1em; }
     footer .footercontent .border {
-      border-left: 1px solid #e9e7eb; }
+      border-left: 1px solid #F9F9F9; }
       footer .footercontent .border .specific {
         margin-bottom: 3.3em; }

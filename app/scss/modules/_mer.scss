@@ -1,11 +1,11 @@
 #skills{
   padding-top: 2%;
-  background-color: #75B9E7;
+  background-color: map-get($color-theme, fourth);
   color: white;
 
   .button {
-    background-color: rgb(178, 243, 118);
-    color: slategrey;
+    background-color: map-get($color-theme, sixth);
+    color: map-get($color-theme, seventh);
     font-size: 15px;
     margin-top: 30px;
     margin-bottom: 60px;
@@ -17,7 +17,7 @@
     transition:all 0.3s ease 0s;
 
     &:hover{
-        color: #ffffff;
+        color: map-get($color-theme, third);
 
         &:before,
         &:after {
@@ -26,7 +26,7 @@
     }
 
     &:active:hover{
-        color: #ffffff;
+        color: map-get($color-theme, third);
 
         &:before,
         &:after {
@@ -39,7 +39,7 @@
         position: absolute;
         top: -7px;
         left: 0;
-        background-color:#fff;
+        background-color:map-get($color-theme, third);
         width: 30%;
         height: 4px;
         transition:all 0.3s ease 0s;
@@ -50,7 +50,7 @@
         position: absolute;
         bottom: -7px;
         right: 0;
-        background-color:#fff;
+        background-color:map-get($color-theme, third);
         width: 30%;
         height: 4px;
         transition:all 0.3s ease 0s;
@@ -58,8 +58,8 @@
   }
 
   .button1{
-    background-color: rgb(178, 243, 118);
-    color: slategrey;
+    background-color: map-get($color-theme, sixth);
+    color: map-get($color-theme, seventh);
     font-size: 15px;
     margin-top: 30px;
     margin-bottom: 60px;
@@ -76,7 +76,7 @@
     width: 1px;
     height: 100%;
     min-height: 23rem;
-    background-color: #e7e8eb;
+    background-color: map-get($color-theme, secondary);
     margin: 0 calc(7% - .5px);
     margin: 0 auto;
   }
@@ -85,7 +85,7 @@
     width: 1px;
     height: 100%;
     min-height: 23rem;
-    background-color: #e7e8eb;
+    background-color: map-get($color-theme, secondary);
     margin: 1.5em auto;
   }  
 }
