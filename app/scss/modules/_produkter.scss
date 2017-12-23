@@ -2,58 +2,46 @@
   padding-top: 2%;
   padding-bottom: 3%;
   background: #F9F9F9;
-}
 
-.tag-header {
-  color: #f8f8f8;
-  font-size: 6em;
-  font-weight: 700;
-}
+  .product-box {
+    cursor: pointer;
+    background-color: transparent;
+    margin: 25px 0px 0px 0px;
 
-.product-box {
-  cursor: pointer;
-}
-
-.product-box, .product, .product-img {
-  position: relative;
-  z-index: 2;
-}
-
-
-.product, .product-box {
-  background-color: #fff;
-  margin: 25px 0px 0px 0px;
-}
-
-.product {
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  /* FF4+ */
-  -o-transition: all 0.4s ease-out;
-  /* Opera 10.5+ */
-  -ms-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-}
-
-.product:hover {
-  opacity: 0.6;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  /* FF4+ */
-  -o-transition: all 0.4s ease-out;
-  /* Opera 10.5+ */
-  -ms-transition: all 0.4s ease-out;
-  /* IE10? */
-  transition: all 0.4s ease-out;
-}
-
-.product-price {
-  position: absolute;
-  z-index: 3;
-  color: #fff;
-  font-size: 1.8em;
-  right: 0px;
-  top: 0px;
-  padding: 5px 20px 5px 20px;
-  background-color: rgb(178, 243, 118);
+    &, .product, .product-img {
+        position: relative;
+        z-index: 2;
+    }
+    & .product{
+        -webkit-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        /* FF4+ */
+        -o-transition: all 0.4s ease-out;
+        /* Opera 10.5+ */
+        -ms-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+        
+        &:hover{
+            opacity: 0.6;
+            -webkit-transition: all 0.4s ease-out;
+            -moz-transition: all 0.4s ease-out;
+            /* FF4+ */
+            -o-transition: all 0.4s ease-out;
+            /* Opera 10.5+ */
+            -ms-transition: all 0.4s ease-out;
+            /* IE10? */
+            transition: all 0.4s ease-out;
+        }
+    }
+  }
+  .product-price {
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    font-size: 1.8em;
+    right: 0px;
+    top: 0px;
+    padding: 5px 20px 5px 20px;
+    background-color: rgb(178, 243, 118);
+  }  
 }
