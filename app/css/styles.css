@@ -428,6 +428,19 @@ p {
 .navbar-form {
   margin-top: 6px; }
 
+#skills .button, #skills .button1 {
+  background-color: #b2f376;
+  color: slategrey;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  border-radius: 0 !important;
+  border: none;
+  transition: all 0.3s ease 0s; }
+
 .navbar-inverse {
   background-color: #3498DB;
   border: none;
@@ -514,55 +527,31 @@ p {
   padding-top: 2%;
   background-color: #75B9E7;
   color: white; }
-  #skills .button {
-    background-color: #b2f376;
-    color: slategrey;
-    font-size: 15px;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    font-weight: 800;
-    text-transform: uppercase;
-    position: relative;
-    border-radius: 0 !important;
-    border: none;
+  #skills .button:hover {
+    color: #ffffff; }
+    #skills .button:hover:before, #skills .button:hover:after {
+      width: 100%; }
+  #skills .button:active:hover {
+    color: #ffffff; }
+    #skills .button:active:hover:before, #skills .button:active:hover:after {
+      width: 100%; }
+  #skills .button:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    background-color: #ffffff;
+    width: 30%;
+    height: 4px;
     transition: all 0.3s ease 0s; }
-    #skills .button:hover {
-      color: #ffffff; }
-      #skills .button:hover:before, #skills .button:hover:after {
-        width: 100%; }
-    #skills .button:active:hover {
-      color: #ffffff; }
-      #skills .button:active:hover:before, #skills .button:active:hover:after {
-        width: 100%; }
-    #skills .button:before {
-      content: "";
-      position: absolute;
-      top: -7px;
-      left: 0;
-      background-color: #ffffff;
-      width: 30%;
-      height: 4px;
-      transition: all 0.3s ease 0s; }
-    #skills .button:after {
-      content: "";
-      position: absolute;
-      bottom: -7px;
-      right: 0;
-      background-color: #ffffff;
-      width: 30%;
-      height: 4px;
-      transition: all 0.3s ease 0s; }
-  #skills .button1 {
-    background-color: #b2f376;
-    color: slategrey;
-    font-size: 15px;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    font-weight: 800;
-    text-transform: uppercase;
-    position: relative;
-    border-radius: 0 !important;
-    border: none;
+  #skills .button:after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    background-color: #ffffff;
+    width: 30%;
+    height: 4px;
     transition: all 0.3s ease 0s; }
   #skills .line1 {
     width: 1px;
