@@ -634,7 +634,7 @@ p {
 footer {
   background-color: #3498DB;
   color: white;
-  overflow: hidden; }
+  overflow-x: hidden; }
   footer #footertop {
     border-right: 67vw solid #ffffff;
     border-left: 33vw solid #ffffff;
