@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/FatmeMustafa/EVXFEH17_Robin_Torn.git"
+    "url": "https://github.com/robintorn/EVXFEH17_Robin_Torn.git"
   },
   "keywords": [
     "MittUF",
@@ -18,9 +18,9 @@
   "author": "Robintorn",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FatmeMustafa/EVXFEH17_Robin_Torn.git/issues"
+    "url": "https://github.com/robintorn/EVXFEH17_Robin_Torn.git/issues"
   },
-  "homepage": "https://github.com/FatmeMustafa/EVXFEH17_Robin_Torn.git#readme",
+  "homepage": "https://github.com/robintorn/EVXFEH17_Robin_Torn.git#readme",
   "dependencies": {
     "browser-sync": "2.18.13",
     "del": "3.0.0",
