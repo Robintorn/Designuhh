@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MittUF</title>
+    <title>Project</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -12,8 +12,70 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
+      <div id="wrapper">
+           
+               <!-- Sidebar -->
+           <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+              <div class="sidebar-header">
+              <div class="sidebar-brand"></div></div>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+             </ul>
+         </nav>
+               <!-- /#sidebar-wrapper -->
+                       <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            as
+          </div>
+          <div class="col">
+            as
+          </div>
+        </div>
+      </div>
 
   <script src="js/bootstrap/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap/bootstrap.js"></script>
+  <script src="fonts/fontawesome-free-5.0.9/svg-with-js/js/fontawesome-all.js"></script>
+  <script>
+    $(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+  </script>
   </body>
 </html>
