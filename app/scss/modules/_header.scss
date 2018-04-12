@@ -24,17 +24,6 @@
             display: flex;
             margin-left: auto;
         }
-        
-        .nav-item {
-            margin-right: 22px;
-            text-align: center;
-            
-            .nav-link {
-                @media (max-width: 991px) {
-                    color: #000;
-                }
-            }
-        }
     }
     
     .navbar-toggler {
@@ -174,10 +163,20 @@ body > .navbar-collapse {
             display: none;
         }
     }
-    
+
+    .nav-item{
+        margin-left: 1em;
+
+        .nav-link {
+            text-transform: uppercase;
+            padding: 24px 0;
+            border-top: 1px solid #e5e5e5;
+        }
+    }
+
     .nav-link,
     .dropdown-toggle {
-        font-weight: 700;
+        font-weight: 200;
         color: #222;
         transition: color .2s ease-out;
         text-align: left;
@@ -185,6 +184,7 @@ body > .navbar-collapse {
         &:hover,
         &:focus {
             text-decoration: none;
+            color: rgb(202, 139, 72);
         }
         
         &.disabled {
