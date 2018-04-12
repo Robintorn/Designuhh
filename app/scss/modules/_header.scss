@@ -10,7 +10,7 @@
 .navbar-offcanvas {
     z-index: 1030;
     
-    .container-fluid {
+    .container {
         position: relative;
         padding: 0;
         transform: translate3d(0px, 0, 0);
@@ -107,7 +107,7 @@
         transform: translate3d(0px, 0, 0);        
     }
     
-    .navbar > .container-fluid {
+    .navbar > .container {
         transform: translate3d(-#{$sidebar-width}, 0, 0);
         
         @media (max-width: 991px) {
@@ -130,7 +130,6 @@ body > .navbar-collapse {
     padding: 60px 1rem;
     background-color: #fff;
     border-left: 1px solid #e3e3e3;
-    text-align: center;
     visibility: visible;    
     overflow-y: visible;
     transform: translate3d($sidebar-width, 0, 0);

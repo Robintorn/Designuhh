@@ -421,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-offcanvas {
   z-index: 1030; }
-  .navbar-offcanvas .container-fluid {
+  .navbar-offcanvas .container {
     position: relative;
     padding: 0;
     transform: translate3d(0px, 0, 0);
@@ -481,10 +481,10 @@ h1, h2, h3, h4, h5, h6 {
 .nav-open .navbar-collapse {
   transform: translate3d(0px, 0, 0); }
 
-.nav-open .navbar > .container-fluid {
+.nav-open .navbar > .container {
   transform: translate3d(-340px, 0, 0); }
   @media (max-width: 991px) {
-    .nav-open .navbar > .container-fluid {
+    .nav-open .navbar > .container {
       transform: translate3d(-226.66667px, 0, 0); } }
 
 .nav-open .wrapper {
@@ -500,7 +500,6 @@ body > .navbar-collapse {
   padding: 60px 1rem;
   background-color: #fff;
   border-left: 1px solid #e3e3e3;
-  text-align: center;
   visibility: visible;
   overflow-y: visible;
   transform: translate3d(340px, 0, 0);
