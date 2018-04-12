@@ -104,42 +104,23 @@ html { height: 100%;}
         }
       }
     }
-  }
-}
 
-.sidebar-header {
-    text-align: center;
-    font-size: 20px;
-    position: relative;
-    width: 100%;
-    display: inline-block;
-}
-.sidebar-brand {
-    height: 70px;
-    position: relative;
-    background:#212531;
-    background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
-   padding-top: 1em;
-}
-.dropdown-header {
-    text-align: center;
-    font-size: 1em;
-    color: #ddd;
-    background:#212531;
-    background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
-}
-.sidebar-nav .dropdown-menu {
-    position: relative;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border-radius: 0;
-    border: none;
-    background-color: #222;
-    box-shadow: none;
-}
-.dropdown-menu.show {
-    top: 0;
+    .sidebar-header {
+      text-align: center;
+      font-size: 20px;
+      position: relative;
+      width: 100%;
+      display: inline-block;
+
+      .sidebar-brand {
+        height: 70px;
+        position: relative;
+        background:#212531;
+        background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+        padding-top: 1em;
+      }
+    }
+  }
 }
 
 /*-------------------------------*/
@@ -156,59 +137,69 @@ html { height: 100%;}
   margin-left: 15px;
   background: transparent;
   border: none;
-}
-.hamburger:hover,
-.hamburger:focus,
-.hamburger:active {
-  outline: none;
-}
-.hamburger.is-closed:before {
-  content: '';
-  display: block;
-  width: 100px;
-  font-size: 14px;
-  color: #fff;
-  line-height: 32px;
-  text-align: center;
-  opacity: 0;
-  -webkit-transform: translate3d(0,0,0);
-  -webkit-transition: all .35s ease-in-out;
-}
-.hamburger.is-closed:hover:before {
-  opacity: 1;
-  display: block;
-  -webkit-transform: translate3d(-100px,0,0);
-  -webkit-transition: all .35s ease-in-out;
+
+    &:hover, &:focus, &:active{
+      outline: none;
+    }
+
+    &.is-closed{
+
+      &::before{
+      content: '';
+      display: block;
+      width: 100px;
+      font-size: 14px;
+      color: #fff;
+      line-height: 32px;
+      text-align: center;
+      opacity: 0;
+      -webkit-transform: translate3d(0,0,0);
+      -webkit-transition: all .35s ease-in-out;
+      }
+
+      &:hover::before{
+        opacity: 1;
+        display: block;
+        -webkit-transform: translate3d(-100px,0,0);
+        -webkit-transition: all .35s ease-in-out;
+      }
+    }
+
+
+    &.is-open{
+      .hamb-top,
+      .hamb-middle,
+      .hamb-bottom{
+        position: absolute;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: #1a1a1a;
+      }
+    }
 }
 
-.hamburger.is-closed .hamb-top,
-.hamburger.is-closed .hamb-middle,
-.hamburger.is-closed .hamb-bottom,
-.hamburger.is-open .hamb-top,
-.hamburger.is-open .hamb-middle,
-.hamburger.is-open .hamb-bottom {
-  position: absolute;
-  left: 0;
-  height: 4px;
-  width: 100%;
-}
-.hamburger.is-closed .hamb-top,
-.hamburger.is-closed .hamb-middle,
-.hamburger.is-closed .hamb-bottom {
-  background-color: #1a1a1a;
-}
-.hamburger.is-closed .hamb-top { 
-  top: 5px; 
-  -webkit-transition: all .35s ease-in-out;
-}
-.hamburger.is-closed .hamb-middle {
-  top: 50%;
-  margin-top: -2px;
-}
-.hamburger.is-closed .hamb-bottom {
-  bottom: 5px;  
-  -webkit-transition: all .35s ease-in-out;
-}
+// Sass sucks dick //
+  .hamburger.is-closed{
+    
+    .hamb-top{
+    @extend %hamburger-top-middle-bottom;
+    top: 5px; 
+    -webkit-transition: all .35s ease-in-out;
+    }
+
+    .hamb-middle{
+      @extend %hamburger-top-middle-bottom;
+      top: 50%;
+      margin-top: -2px;
+    }
+
+    .hamb-bottom{
+      @extend %hamburger-top-middle-bottom;
+      bottom: 5px;  
+      -webkit-transition: all .35s ease-in-out;
+    }
+  }
 
 .hamburger.is-closed:hover .hamb-top {
   top: 0;
@@ -218,11 +209,7 @@ html { height: 100%;}
   bottom: 0;
   -webkit-transition: all .35s ease-in-out;
 }
-.hamburger.is-open .hamb-top,
-.hamburger.is-open .hamb-middle,
-.hamburger.is-open .hamb-bottom {
-  background-color: #1a1a1a;
-}
+
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-bottom {
   top: 50%;
