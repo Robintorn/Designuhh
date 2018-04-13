@@ -88,8 +88,6 @@
         }
     }
     
-    
-    
     .navbar-collapse.collapse,
     .navbar-collapse.collapse.in,
     .navbar-collapse.collapsing {
@@ -103,7 +101,7 @@
     }
     
     .navbar > .container {
-        transform: translate3d(-#{$sidebar-width}, 0, 0);
+        transform: translate3d(-#{$sidebar-width / 1.4}, 0, 0);
         
         @media (max-width: 991px) {
             transform: translate3d(-#{$sidebar-width / 1.5}, 0, 0);

@@ -392,7 +392,7 @@ template {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Black And White Picture', Arial, Helvetica, sans-serif;
+  font-family: 'lato', Arial, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 2em;
   letter-spacing: 0.5px;
@@ -470,7 +470,7 @@ img {
   transform: translate3d(0px, 0, 0); }
 
 .nav-open .navbar > .container {
-  transform: translate3d(-340px, 0, 0); }
+  transform: translate3d(-242.85714px, 0, 0); }
   @media (max-width: 991px) {
     .nav-open .navbar > .container {
       transform: translate3d(-226.66667px, 0, 0); } }
@@ -587,9 +587,9 @@ body > .navbar-collapse {
     background: transparent;
     color: white; }
     #first .intro h1 {
-      font-size: 6em;
-      margin-top: 1.8em;
+      text-transform: uppercase;
+      font-size: 8vw;
+      margin-top: 1em;
       letter-spacing: 0.1em; }
     #first .intro h5 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.2em; }
+      font-size: 1.3em; }
