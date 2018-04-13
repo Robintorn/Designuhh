@@ -8,7 +8,7 @@
         position: relative;
 
         .separator {
-            color: #c5a47e;
+            color: map-get($light, secondary);
             margin: 0 auto 1em;
             width: 11em;
 

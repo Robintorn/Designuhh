@@ -406,6 +406,7 @@ img {
 section {
   padding-top: 5%; }
 
+/* Light theme */
 #about .separator-container .separator.line-separator::before, #about .separator-container .separator.line-separator::after {
   display: block;
   width: 40%;
@@ -421,7 +422,7 @@ section {
     font-size: 25px;
     padding: 20px 15px;
     margin: 5px 0;
-    color: white; }
+    color: #fff; }
 
 .navbar-offcanvas {
   z-index: 1030; }
@@ -494,7 +495,6 @@ body > .navbar-collapse {
   height: 100%;
   padding: 60px 1rem;
   background-color: #fff;
-  border-left: 1px solid #e3e3e3;
   visibility: visible;
   overflow-y: visible;
   transform: translate3d(340px, 0, 0);
@@ -524,14 +524,14 @@ body > .navbar-collapse {
   body > .navbar-collapse .nav-link,
   body > .navbar-collapse .dropdown-toggle {
     font-weight: 200;
-    color: #222;
+    color: black;
     transition: color .2s ease-out;
     text-align: left; }
     body > .navbar-collapse .nav-link:hover, body > .navbar-collapse .nav-link:focus,
     body > .navbar-collapse .dropdown-toggle:hover,
     body > .navbar-collapse .dropdown-toggle:focus {
       text-decoration: none;
-      color: #ca8b48; }
+      color: #c5a47e; }
     body > .navbar-collapse .nav-link.disabled,
     body > .navbar-collapse .dropdown-toggle.disabled {
       color: rgba(0, 0, 0, 0.35); }
