@@ -392,12 +392,16 @@ template {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: 'Black And White Picture', Arial, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 2em;
   letter-spacing: 0.5px;
   list-style-type: none;
   text-decoration: none; }
+
+img {
+  height: auto;
+  width: 100%; }
 
 .wrapper {
   transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1); }
@@ -407,11 +411,10 @@ template {
   background: transparent;
   transition: all .5s .1s; }
   .navbar .navbar-brand {
-    font-size: 20px;
+    font-size: 25px;
     padding: 20px 15px;
     margin: 5px 0;
-    color: white;
-    font-weight: 600; }
+    color: white; }
 
 .navbar-offcanvas {
   z-index: 1030; }
