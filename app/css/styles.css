@@ -406,6 +406,9 @@ img {
 section {
   padding-top: 5%; }
 
+.row {
+  margin-bottom: 1.5em; }
+
 /* Light theme lel */
 #about .separator-container .separator.line-separator::before, #about .separator-container .separator.line-separator::after {
   display: block;
