@@ -257,3 +257,23 @@ body > .navbar-collapse {
         transform: rotate(0);
     }
 }
+
+.affix {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+    &.navbar {
+        background-color: map-get($light , primary);
+
+        .navbar-brand, .nav-item>a,{
+            color: black;
+        }
+
+        & .bar1, & .bar2, & .bar3{
+            background: black;
+        }
+      }
+  }
