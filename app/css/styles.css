@@ -425,11 +425,12 @@ section {
   border: 1px solid #fff; }
 
 .navbar {
-  height: 75px;
+  height: 70px;
   background: transparent;
   transition: all .5s .1s; }
   .navbar .navbar-brand {
     font-size: 25px;
+    height: 60px;
     padding: 20px 15px;
     margin: 5px 0;
     color: #fff; }
