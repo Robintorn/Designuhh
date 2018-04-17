@@ -660,31 +660,30 @@ body > .navbar-collapse {
   color: #777777;
   font-size: 1.3em; }
 
-#what-we-do h2 {
-  text-transform: uppercase; }
-
-#what-we-do .separator-container {
-  text-align: center;
-  position: relative;
-  margin-bottom: 4em; }
-  #what-we-do .separator-container .separator {
+#what-we-do {
+  padding-top: 5%; }
+  #what-we-do h2 {
+    text-transform: uppercase; }
+  #what-we-do .separator-container {
+    text-align: center;
+    position: relative;
+    margin-bottom: 4em; }
+    #what-we-do .separator-container .separator {
+      color: #c5a47e;
+      margin: 0 auto 1em;
+      width: 11em; }
+      #what-we-do .separator-container .separator.line-separator::before {
+        float: left; }
+      #what-we-do .separator-container .separator.line-separator::after {
+        float: right; }
+  #what-we-do .icons {
     color: #c5a47e;
-    margin: 0 auto 1em;
-    width: 11em; }
-    #what-we-do .separator-container .separator.line-separator::before {
-      float: left; }
-    #what-we-do .separator-container .separator.line-separator::after {
-      float: right; }
-
-#what-we-do .icons {
-  color: #c5a47e;
-  font-size: 75px;
-  margin-bottom: 0.5em; }
-
-#what-we-do p {
-  color: #777777;
-  font-size: 1em;
-  line-height: 1.5em; }
+    font-size: 75px;
+    margin-bottom: 0.5em; }
+  #what-we-do p {
+    color: #777777;
+    font-size: 1em;
+    line-height: 1.5em; }
 
 footer {
   background-color: #c5a47e;
