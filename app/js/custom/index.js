@@ -159,12 +159,11 @@ $(document).ready(function() {
             let nav = $('#first');
             nav.append(wrapper);
         });
-        
-        // init
-        toggleAffix(ele, $(window), wrapper);
       });
-      
     });
+    
+    // init
+    toggleAffix(ele, $(window), wrapper);
 
 
 $(document).ready(function() {
