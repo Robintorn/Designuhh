@@ -404,7 +404,7 @@ img {
   width: 100%; }
 
 section {
-  padding-top: 5%; }
+  padding-top: 10%; }
 
 .row {
   margin-bottom: 1.5em; }
@@ -606,8 +606,7 @@ body > .navbar-collapse {
   z-index: 1030; }
   .affix.navbar {
     background-color: #fff;
-    border-bottom: 1px solid #e5e5e5;
-    height: 65px; }
+    border-bottom: 1px solid #e5e5e5; }
     .affix.navbar .navbar-brand, .affix.navbar .nav-item > a {
       color: black; }
     .affix.navbar .bar1, .affix.navbar .bar2, .affix.navbar .bar3 {
