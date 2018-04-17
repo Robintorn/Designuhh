@@ -161,9 +161,6 @@ $(document).ready(function() {
         });
       });
     });
-    
-    // init
-    toggleAffix(ele, $(window), wrapper);
 
 
 $(document).ready(function() {
@@ -178,3 +175,7 @@ $(document).ready(function() {
     }, 1000 );
   });
 })
+
+    
+    // init
+    toggleAffix(ele, $(window), wrapper);
