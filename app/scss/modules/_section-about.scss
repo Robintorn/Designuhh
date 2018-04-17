@@ -14,11 +14,11 @@
 
             &.line-separator{
                 &::before{
-                    @extend %separator-border;
+                    @extend %separator-border1;
                     float: left;
                 }
                 &::after{
-                    @extend %separator-border;
+                    @extend %separator-border1;
                     float: right;
                 }
             }

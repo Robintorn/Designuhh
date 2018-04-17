@@ -4,6 +4,29 @@
     background-size:cover;
     background-image:url('https://ununsplash.imgix.net/photo-1427434846691-47fc561d1179?fit=crop&fm=jpg&h=700&q=75&w=1050');
 
+    
+    .separator-container {
+      text-align: center;
+      position: relative;
+
+      .separator {
+          color: map-get($light, primary);
+          margin: 0 auto 2em;
+          width: 20em;
+
+          &.line-separator{
+              &::before{
+                  @extend %separator-border2;
+                  float: left;
+              }
+              &::after{
+                  @extend %separator-border2;
+                  float: right;
+              }
+          }
+      }
+  }
+
     .intro{
       background: transparent;
       color: white;
@@ -12,6 +35,7 @@
         text-transform: uppercase;
         font-size: 7em;
         letter-spacing: 0.1em;
+        margin-bottom: 20px;
       }
 
       h5{
