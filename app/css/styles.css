@@ -605,7 +605,8 @@ body > .navbar-collapse {
   left: 0;
   z-index: 1030; }
   .affix.navbar {
-    background-color: #fff; }
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5; }
     .affix.navbar .navbar-brand, .affix.navbar .nav-item > a {
       color: black; }
     .affix.navbar .bar1, .affix.navbar .bar2, .affix.navbar .bar3 {
