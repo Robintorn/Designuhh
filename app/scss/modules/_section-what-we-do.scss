@@ -1,0 +1,40 @@
+#what-we-do{
+    h2{
+        text-transform: uppercase;
+    }
+
+    .separator-container {
+        text-align: center;
+        position: relative;
+        margin-bottom: 4em;
+
+        .separator {
+            color: map-get($light, secondary);
+            margin: 0 auto 1em;
+            width: 11em;
+
+            &.line-separator{
+                &::before{
+                    @extend %separator-border1;
+                    float: left;
+                }
+                &::after{
+                    @extend %separator-border1;
+                    float: right;
+                }
+            }
+        }
+    }
+
+    .icons{
+        color: map-get($light, secondary);
+        font-size: 75px;
+        margin-bottom: 0.5em;
+    }
+
+    p{
+        color: #777777;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+}

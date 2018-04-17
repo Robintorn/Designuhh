@@ -1,0 +1,12 @@
+footer{
+    background-color: map-get($light, secondary);
+    color: map-get($light , primary);
+    overflow-x: hidden;
+    height: 300px;
+       
+    #footertop {
+        border-right: 67vw solid map-get($light, primary);
+        border-left: 33vw solid map-get($light, primary);
+        border-bottom: 47px solid transparent;
+      }
+    }
