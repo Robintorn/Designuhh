@@ -394,7 +394,6 @@ template {
   box-sizing: border-box;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-weight: 400;
-  line-height: 2em;
   letter-spacing: 0.5px;
   list-style-type: none;
   text-decoration: none; }
@@ -640,6 +639,20 @@ body > .navbar-collapse {
       margin-bottom: 20px; }
     #first .intro h5 {
       font-size: 1.3em; }
+    #first .intro a.scroll-arrow {
+      font-size: 35px;
+      color: white;
+      width: 50px;
+      line-height: 52px;
+      border-radius: 50%;
+      height: 50px;
+      border: 1px solid white;
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      left: 48%;
+      z-index: 1029;
+      opacity: .9; }
 
 #about h2 {
   text-transform: uppercase; }
@@ -657,6 +670,7 @@ body > .navbar-collapse {
       float: right; }
 
 #about p {
+  line-height: 2em;
   color: #777777;
   font-size: 1.3em; }
 
@@ -688,9 +702,18 @@ body > .navbar-collapse {
 footer {
   background-color: #c5a47e;
   color: #fff;
-  overflow-x: hidden;
-  height: 300px; }
+  overflow-x: hidden; }
   footer #footertop {
     border-right: 67vw solid #fff;
     border-left: 33vw solid #fff;
     border-bottom: 47px solid transparent; }
+  footer .footercontent {
+    margin-bottom: 3em; }
+    footer .footercontent .logo {
+      max-width: 60px;
+      height: auto;
+      margin-bottom: 1em; }
+    footer .footercontent .border-footer {
+      border-left: 1px solid #fff; }
+      footer .footercontent .border-footer .specific {
+        margin-bottom: 3.3em; }

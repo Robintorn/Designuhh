@@ -175,7 +175,3 @@ $(document).ready(function() {
     }, 1000 );
   });
 })
-
-    
-    // init
-    toggleAffix(ele, $(window), wrapper);

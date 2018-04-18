@@ -42,6 +42,22 @@
       h5{
         font-size: 1.3em;
       }
+
+      a.scroll-arrow {
+        font-size: 35px;
+        color: white;
+        width: 50px;
+        line-height: 52px;
+        border-radius: 50%;
+        height: 50px;
+        border: 1px solid white;
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 48%;
+        z-index: 1029;
+        opacity: .9;
+    }
     }
   }
   
