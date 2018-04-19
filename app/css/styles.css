@@ -413,14 +413,14 @@ section {
   display: block;
   width: 40%;
   content: " ";
-  margin-top: 20px;
+  margin-top: 15px;
   border: 1px solid #c5a47e; }
 
 #first .separator-container .separator.line-separator::before, #first .separator-container .separator.line-separator::after {
   display: block;
   width: 40%;
   content: " ";
-  margin-top: 18px;
+  margin-top: 15px;
   border: 1px solid #fff; }
 
 .navbar {
