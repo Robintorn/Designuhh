@@ -25,10 +25,7 @@
     }
 
     p{
-        line-height: 2em;
-        color: #777777;
-        font-size: 1.3em;
-        margin-bottom: 4em;
+        @extend %paragraf-standard;
     }
 
     img{

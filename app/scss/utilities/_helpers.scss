@@ -1,3 +1,5 @@
+// Seperator helpers lel
+
 %seperator {
     margin: 0 auto 2em;
     width: 20em;
@@ -26,4 +28,18 @@
     content: " ";
     margin-top: 15px;
     border: 1px solid #fff;
+}
+
+// Paragraf
+
+%paragraf-standard{
+    @media (max-width: 768px){
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+
+    line-height: 2em;
+    color: #777777;
+    font-size: 1.3em;
+    margin-bottom: 4em;
 }
