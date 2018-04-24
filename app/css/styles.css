@@ -443,7 +443,7 @@ section {
   @media (max-width: 768px) {
     #about p {
       font-size: 1em;
-      line-height: 1.4em; } }
+      line-height: 1.4737; } }
 
 .navbar {
   height: 70px;
@@ -723,7 +723,7 @@ body > .navbar-collapse {
 #what-we-do p {
   color: #777777;
   font-size: 1em;
-  line-height: 1.5em; }
+  line-height: 1.4737; }
 
 footer {
   background-color: #c5a47e;
