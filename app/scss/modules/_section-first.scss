@@ -46,9 +46,14 @@
     }
 }
 
-      h5{
-        font-size: 1.3em;
-      }
+    h5{
+      @media (max-width: 768px){
+        font-size: 1.125em;
+        margin-top: 50px;
+    }
+
+    font-size: 1.3em;
+}
 
       a.scroll-arrow {
         font-size: 35px;

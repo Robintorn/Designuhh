@@ -656,6 +656,10 @@ body > .navbar-collapse {
           margin-top: 60px; } }
     #first .intro h5 {
       font-size: 1.3em; }
+      @media (max-width: 768px) {
+        #first .intro h5 {
+          font-size: 1.125em;
+          margin-top: 50px; } }
     #first .intro a.scroll-arrow {
       font-size: 35px;
       color: white;
