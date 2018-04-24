@@ -11,8 +11,7 @@
 
         .separator {
             color: map-get($light, secondary);
-            margin: 0 auto 1em;
-            width: 11em;
+            @extend %seperator2;
 
             &.line-separator{
                 &::before{

@@ -409,6 +409,17 @@ section {
   margin-bottom: 1.5em; }
 
 /* Light theme lel */
+#first .separator-container .separator {
+  margin: 0 auto 2em;
+  width: 20em; }
+  @media (max-width: 768px) {
+    #first .separator-container .separator {
+      width: 12em; } }
+
+#about .separator-container .separator, #what-we-do .separator-container .separator {
+  margin: 0 auto 2em;
+  width: 11em; }
+
 #about .separator-container .separator.line-separator::before, #about .separator-container .separator.line-separator::after, #what-we-do .separator-container .separator.line-separator::before, #what-we-do .separator-container .separator.line-separator::after {
   display: block;
   width: 40%;
@@ -622,9 +633,7 @@ body > .navbar-collapse {
     text-align: center;
     position: relative; }
     #first .separator-container .separator {
-      color: #fff;
-      margin: 0 auto 2em;
-      width: 20em; }
+      color: #fff; }
       #first .separator-container .separator.line-separator::before {
         float: left; }
       #first .separator-container .separator.line-separator::after {
@@ -638,12 +647,12 @@ body > .navbar-collapse {
       letter-spacing: 0.1em;
       margin-bottom: 20px;
       text-shadow: -2px 2px 30px rgba(0, 0, 0, 0.25), -2px 4px 14px rgba(0, 0, 0, 0.1); }
-    @media (max-width: 768px) {
-      #first .intro h1 {
-        font-size: 3.5em;
-        letter-spacing: 0.07em;
-        line-height: 1.7;
-        margin-top: 60px; } }
+      @media (max-width: 768px) {
+        #first .intro h1 {
+          font-size: 3.5em;
+          letter-spacing: 0.07em;
+          line-height: 1.7;
+          margin-top: 60px; } }
     #first .intro h5 {
       font-size: 1.3em; }
     #first .intro a.scroll-arrow {
@@ -668,9 +677,7 @@ body > .navbar-collapse {
   text-align: center;
   position: relative; }
   #about .separator-container .separator {
-    color: #c5a47e;
-    margin: 0 auto 1em;
-    width: 11em; }
+    color: #c5a47e; }
     #about .separator-container .separator.line-separator::before {
       float: left; }
     #about .separator-container .separator.line-separator::after {
@@ -694,9 +701,7 @@ body > .navbar-collapse {
     position: relative;
     margin-bottom: 4em; }
     #what-we-do .separator-container .separator {
-      color: #c5a47e;
-      margin: 0 auto 1em;
-      width: 11em; }
+      color: #c5a47e; }
       #what-we-do .separator-container .separator.line-separator::before {
         float: left; }
       #what-we-do .separator-container .separator.line-separator::after {

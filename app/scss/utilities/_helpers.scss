@@ -1,4 +1,18 @@
-%separator-border1{
+%seperator {
+    margin: 0 auto 2em;
+    width: 20em;
+
+    @media (max-width: 768px){
+      width: 12em;
+  }
+}
+
+%seperator2 {
+    margin: 0 auto 2em;
+    width: 11em;
+}
+
+%separator-border1 {
     display: block;
     width: 40%;
     content: " ";
@@ -6,7 +20,7 @@
     border: 1px solid #c5a47e;
 }
 
-%separator-border2{
+%separator-border2 {
     display: block;
     width: 40%;
     content: " ";
