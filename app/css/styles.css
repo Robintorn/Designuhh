@@ -406,6 +406,15 @@ section {
     section {
       padding-top: 30%; } }
 
+.btn {
+  font-weight: 600;
+  line-height: 1; }
+
+.btn-round {
+  border-width: 1px;
+  border-radius: 30px !important;
+  padding: 9px 18px; }
+
 .row {
   margin-bottom: 1.5em; }
 
@@ -417,11 +426,11 @@ section {
     #first .separator-container .separator {
       width: 12em; } }
 
-#about .separator-container .separator, #what-we-do .separator-container .separator {
+#about .separator-container .separator, #what-we-do .separator-container .separator, #services .separator-container .separator {
   margin: 0 auto 2em;
   width: 11em; }
 
-#about .separator-container .separator.line-separator::before, #about .separator-container .separator.line-separator::after, #what-we-do .separator-container .separator.line-separator::before, #what-we-do .separator-container .separator.line-separator::after {
+#about .separator-container .separator.line-separator::before, #about .separator-container .separator.line-separator::after, #what-we-do .separator-container .separator.line-separator::before, #what-we-do .separator-container .separator.line-separator::after, #services .separator-container .separator.line-separator::before, #services .separator-container .separator.line-separator::after {
   display: block;
   width: 40%;
   content: " ";
@@ -435,13 +444,13 @@ section {
   margin-top: 15px;
   border: 1px solid #fff; }
 
-#about p {
+#about p, #what-we-do p, #services p {
   line-height: 2em;
   color: #777777;
   font-size: 1.3em;
   margin-bottom: 4em; }
   @media (max-width: 768px) {
-    #about p {
+    #about p, #what-we-do p, #services p {
       font-size: 1em;
       line-height: 1.4737; } }
 
@@ -720,10 +729,40 @@ body > .navbar-collapse {
   font-size: 75px;
   margin-bottom: 0.5em; }
 
-#what-we-do p {
-  color: #777777;
-  font-size: 1em;
-  line-height: 1.4737; }
+#what-we-do .paragraf-mindre {
+  font-size: 1em; }
+
+#services h2 {
+  text-transform: uppercase; }
+
+#services .separator-container {
+  text-align: center;
+  position: relative; }
+  #services .separator-container .separator {
+    color: #c5a47e; }
+    #services .separator-container .separator.line-separator::before {
+      float: left; }
+    #services .separator-container .separator.line-separator::after {
+      float: right; }
+
+#services p {
+  margin-bottom: 2em; }
+
+#services .paragraf-mindre {
+  font-size: 1em; }
+
+#services img {
+  margin-bottom: 2em; }
+
+#services .btn-fill {
+  color: #FFFFFF;
+  background-color: #888888;
+  opacity: 1;
+  margin-bottom: 2em; }
+  #services .btn-fill:visited {
+    background-color: #6d6a6a; }
+  #services .btn-fill:hover {
+    background-color: #757575; }
 
 footer {
   background-color: #c5a47e;

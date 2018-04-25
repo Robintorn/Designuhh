@@ -1,4 +1,4 @@
-#what-we-do{
+#services{
     h2{
         text-transform: uppercase;
     }
@@ -6,7 +6,6 @@
     .separator-container {
         text-align: center;
         position: relative;
-        margin-bottom: 4em;
 
         .separator {
             color: map-get($light, secondary);
@@ -25,17 +24,31 @@
         }
     }
 
-    .icons{
-        color: map-get($light, secondary);
-        font-size: 75px;
-        margin-bottom: 0.5em;
-    }
-
     p{
         @extend %paragraf-standard;
+        margin-bottom: 2em;
     }
 
     .paragraf-mindre{
         font-size: 1em;
+    }
+
+    img{
+        margin-bottom: 2em;
+    }
+
+    .btn-fill{
+        color: #FFFFFF;
+        background-color: #888888;
+        opacity: 1;
+        margin-bottom: 2em;
+
+        &:visited{
+            background-color: #6d6a6a;
+        }
+
+        &:hover{
+            background-color: #757575;
+        }
     }
 }
