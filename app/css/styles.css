@@ -1,3 +1,39 @@
+/* Light theme lel */
+#first .separator-container .separator {
+  margin: 0 auto 2em;
+  width: 20em; }
+  @media (max-width: 768px) {
+    #first .separator-container .separator {
+      width: 12em; } }
+
+#about .separator-container .separator, #what-we-do .separator-container .separator, #services .separator-container .separator {
+  margin: 0 auto 2em;
+  width: 11em; }
+
+#about .separator-container .separator.line-separator::before, #about .separator-container .separator.line-separator::after, #what-we-do .separator-container .separator.line-separator::before, #what-we-do .separator-container .separator.line-separator::after, #services .separator-container .separator.line-separator::before, #services .separator-container .separator.line-separator::after {
+  display: block;
+  width: 40%;
+  content: " ";
+  margin-top: 15px;
+  border: 1px solid #c5a47e; }
+
+#first .separator-container .separator.line-separator::before, #first .separator-container .separator.line-separator::after {
+  display: block;
+  width: 40%;
+  content: " ";
+  margin-top: 15px;
+  border: 1px solid #fff; }
+
+#about p, #what-we-do p, #services p {
+  line-height: 2em;
+  color: #777777;
+  font-size: 1.3em;
+  margin-bottom: 4em; }
+  @media (max-width: 768px) {
+    #about p, #what-we-do p, #services p {
+      font-size: 1em;
+      line-height: 1.4737; } }
+
 /*-----------Normalize file-----------*/
 /*
  * 1. Correct the line height in all browsers.
@@ -396,8 +432,8 @@ template {
   list-style-type: none;
   text-decoration: none; }
   *::selection {
-    background: #E3C4A0;
-    color: white; }
+    background: #c5a47e;
+    color: #fff; }
 
 img {
   height: auto;
@@ -420,42 +456,6 @@ section {
 
 .row {
   margin-bottom: 1.5em; }
-
-/* Light theme lel */
-#first .separator-container .separator {
-  margin: 0 auto 2em;
-  width: 20em; }
-  @media (max-width: 768px) {
-    #first .separator-container .separator {
-      width: 12em; } }
-
-#about .separator-container .separator, #what-we-do .separator-container .separator, #services .separator-container .separator {
-  margin: 0 auto 2em;
-  width: 11em; }
-
-#about .separator-container .separator.line-separator::before, #about .separator-container .separator.line-separator::after, #what-we-do .separator-container .separator.line-separator::before, #what-we-do .separator-container .separator.line-separator::after, #services .separator-container .separator.line-separator::before, #services .separator-container .separator.line-separator::after {
-  display: block;
-  width: 40%;
-  content: " ";
-  margin-top: 15px;
-  border: 1px solid #c5a47e; }
-
-#first .separator-container .separator.line-separator::before, #first .separator-container .separator.line-separator::after {
-  display: block;
-  width: 40%;
-  content: " ";
-  margin-top: 15px;
-  border: 1px solid #fff; }
-
-#about p, #what-we-do p, #services p {
-  line-height: 2em;
-  color: #777777;
-  font-size: 1.3em;
-  margin-bottom: 4em; }
-  @media (max-width: 768px) {
-    #about p, #what-we-do p, #services p {
-      font-size: 1em;
-      line-height: 1.4737; } }
 
 .navbar {
   height: 70px;

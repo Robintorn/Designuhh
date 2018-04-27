@@ -9,8 +9,8 @@
   text-decoration: none;
 
   &::selection {
-    background: #E3C4A0;
-    color: white;
+    background: map-get($light, secondary);
+    color: map-get($light, primary);
   }
 }
 
