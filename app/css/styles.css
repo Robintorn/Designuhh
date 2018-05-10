@@ -15,7 +15,7 @@
   width: 40%;
   content: " ";
   margin-top: 15px;
-  border: 1px solid #c5a47e; }
+  border: 1px solid #005AA7; }
 
 #first .separator-container .separator.line-separator::before, #first .separator-container .separator.line-separator::after {
   display: block;
@@ -432,7 +432,7 @@ template {
   list-style-type: none;
   text-decoration: none; }
   *::selection {
-    background: #c5a47e;
+    background: #559acf;
     color: #fff; }
 
 img {
@@ -575,7 +575,7 @@ body > .navbar-collapse {
     body > .navbar-collapse .dropdown-toggle:hover,
     body > .navbar-collapse .dropdown-toggle:focus {
       text-decoration: none;
-      color: #c5a47e; }
+      color: #559acf; }
     body > .navbar-collapse .nav-link.disabled,
     body > .navbar-collapse .dropdown-toggle.disabled {
       color: rgba(0, 0, 0, 0.35); }
@@ -704,7 +704,7 @@ body > .navbar-collapse {
   text-align: center;
   position: relative; }
   #about .separator-container .separator {
-    color: #c5a47e; }
+    color: #559acf; }
     #about .separator-container .separator.line-separator::before {
       float: left; }
     #about .separator-container .separator.line-separator::after {
@@ -721,14 +721,14 @@ body > .navbar-collapse {
   position: relative;
   margin-bottom: 4em; }
   #what-we-do .separator-container .separator {
-    color: #c5a47e; }
+    color: #559acf; }
     #what-we-do .separator-container .separator.line-separator::before {
       float: left; }
     #what-we-do .separator-container .separator.line-separator::after {
       float: right; }
 
 #what-we-do .icons {
-  color: #c5a47e;
+  color: #559acf;
   font-size: 75px;
   margin-bottom: 0.5em; }
 
@@ -742,7 +742,7 @@ body > .navbar-collapse {
   text-align: center;
   position: relative; }
   #services .separator-container .separator {
-    color: #c5a47e; }
+    color: #559acf; }
     #services .separator-container .separator.line-separator::before {
       float: left; }
     #services .separator-container .separator.line-separator::after {
@@ -768,7 +768,7 @@ body > .navbar-collapse {
     background-color: #757575; }
 
 .footer-bs {
-  background-image: linear-gradient(to top, #c5a47e 0%, #fd8f45 100%);
+  background-image: linear-gradient(to top, #005AA7 0%, #e1eec3 100%);
   padding: 60px 40px;
   color: white;
   border-bottom-right-radius: 6px;
