@@ -6,11 +6,11 @@
     #first .separator-container .separator {
       width: 12em; } }
 
-#about .separator-container .separator, #what-we-do .separator-container .separator, #services .separator-container .separator {
+#about .separator-container .separator, #what-we-do .separator-container .separator {
   margin: 0 auto 2em;
   width: 11em; }
 
-#about .separator-container .separator.line-separator::before, #about .separator-container .separator.line-separator::after, #what-we-do .separator-container .separator.line-separator::before, #what-we-do .separator-container .separator.line-separator::after, #services .separator-container .separator.line-separator::before, #services .separator-container .separator.line-separator::after {
+#about .separator-container .separator.line-separator::before, #about .separator-container .separator.line-separator::after, #what-we-do .separator-container .separator.line-separator::before, #what-we-do .separator-container .separator.line-separator::after {
   display: block;
   width: 40%;
   content: " ";
@@ -24,13 +24,13 @@
   margin-top: 15px;
   border: 1px solid #fff; }
 
-#about p, #what-we-do p, #services p {
+#about p, #what-we-do p {
   line-height: 2em;
   color: #777777;
   font-size: 1.3em;
   margin-bottom: 4em; }
   @media (max-width: 768px) {
-    #about p, #what-we-do p, #services p {
+    #about p, #what-we-do p {
       font-size: 1em;
       line-height: 1.4737; } }
 
@@ -735,38 +735,6 @@ body > .navbar-collapse {
 
 #what-we-do .paragraf-mindre {
   font-size: 1em; }
-
-#services h2 {
-  text-transform: uppercase; }
-
-#services .separator-container {
-  text-align: center;
-  position: relative; }
-  #services .separator-container .separator {
-    color: #559acf; }
-    #services .separator-container .separator.line-separator::before {
-      float: left; }
-    #services .separator-container .separator.line-separator::after {
-      float: right; }
-
-#services p {
-  margin-bottom: 2em; }
-
-#services .paragraf-mindre {
-  font-size: 1em; }
-
-#services img {
-  margin-bottom: 2em; }
-
-#services .btn-fill {
-  color: #FFFFFF;
-  background-color: #888888;
-  opacity: 1;
-  margin-bottom: 2em; }
-  #services .btn-fill:visited {
-    background-color: #6d6a6a; }
-  #services .btn-fill:hover {
-    background-color: #757575; }
 
 .footer-bs {
   background-image: linear-gradient(to top, #005AA7 0%, #e1eec3 100%);
